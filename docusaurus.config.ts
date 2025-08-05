@@ -4,15 +4,11 @@ import type * as Preset from "@docusaurus/preset-classic";
 import { themes as prismThemes } from "prism-react-renderer";
 
 const config: Config = {
-	title: "Open WebUI",
-	tagline: "On a mission to build the best AI interface",
-	favicon: "images/favicon.png",
-
-	// Set the production url of your site here
-	url: "https://openwebui.com",
-	// Set the /<baseUrl>/ pathname under which your site is served
-	// For GitHub pages deployment, it is often '/<projectName>/'
-	baseUrl: "/",
+	  title: "Open WebUI",
+	  tagline: "ChatGPT-Style WebUI for LLMs (Formerly Ollama WebUI)",
+	  favicon: "images/favicon.png",
+	  url: process.env.SITE_URL || "https://openwebui.com",
+	  baseUrl: process.env.BASE_URL || "/",
 
 	// GitHub pages deployment config.
 	// If you aren't using GitHub pages, you don't need these.
